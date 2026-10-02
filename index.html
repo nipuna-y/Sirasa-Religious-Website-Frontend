@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sirasa Religious — Sacred Places</title>
+<link rel="stylesheet" href="css/style.css?v=trilingual-full-1">
+</head>
+<body>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden">Discover sacred places, religious heritage and places of peace across Sri Lanka.</h2>
+<div class="toast" id="toast"></div>
+
+<nav class="topnav">
+  <div class="wrap">
+    <div class="brand"><img class="brand-mark" src="assets/logo.png" alt="" aria-hidden="true">SIRASA <span>RELIGIOUS</span></div>
+    <div class="navlinks" id="navlinks">
+      <button class="active" data-page="home">Home</button>
+      <button data-page="listing">Places</button>
+    </div>
+    <div class="navright" style="position:relative">
+      <div class="language-switcher" id="languageSwitcher" aria-label="Language selector">
+        <button type="button" class="language-btn active" data-language="si">සිංහල</button>
+        <button type="button" class="language-btn" data-language="en">English</button>
+        <button type="button" class="language-btn" data-language="ta">தமிழ்</button>
+      </div>
+      <div class="iconbtn" id="navSearchBtn">⌕</div>
+      <div class="iconbtn" id="navMenuBtn">☰</div>
+      <div class="glass mobilemenu" id="mobileMenu">
+        <button class="active" data-page="home">Home</button>
+        <button data-page="listing">Places</button>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<div id="page-home">
+  <section class="hero wrap">
+    <div class="hero-carousel" id="heroCarousel" tabindex="0" aria-label="Featured sacred places carousel">
+      <div class="hero-fixed-copy" id="heroFixedCopy">
+        <div class="hero-fixed-eyebrow" id="heroFixedEyebrow">SIRASA TV RELIGIOUS</div>
+        <h1 id="heroFixedTitle" class="hero-line-progress"><span class="title-line title-line-one">Discover</span><span class="title-line title-line-two"><span class="accent">Sacred Places.</span></span></h1>
+        <div class="hero-title-points" aria-label="Sacred heritage, stories of faith, places of peace"><span>SACRED HERITAGE</span><i></i><span>STORIES OF FAITH</span><i></i><span>PLACES OF PEACE</span></div>
+        <p id="heroFixedDescription">Discover timeless stories, sacred architecture, and places of peace across Sri Lanka.</p>
+        <div class="btnrow hero-fixed-actions">
+          <button class="btn btn-solid" type="button" id="heroFixedExploreBtn">Explore places →</button>
+          <button class="btn btn-ghost" type="button" id="heroFixedViewAllBtn">View all</button>
+        </div>
+      </div>
+      <div class="hero-track" id="heroTrack">
+        <article class="hero-slide is-active" data-index="0">
+          <div class="hero-photo" data-local-image="assets/main-slider/slide-01.jpg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Seruvila_Mangala_Raja_Maha_Viharaya.jpg?width=1800')"></div>
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <div class="tag">SIRASA TV RELIGIOUS · FEATURED PLACE</div>
+            <div class="hero-kicker">01 / 04</div>
+            <h1>Discover<br><em>sacred places.</em></h1>
+            <p>Explore temples, churches, mosques, and spiritual heritage across Sri Lanka.</p>
+            <div class="btnrow">
+              <div class="btn btn-solid" id="heroExploreBtn">Explore places →</div>
+              <div class="btn btn-ghost" id="heroViewAllBtn">View all</div>
+            </div>
+          </div>
+          <div class="hero-meta">
+            <span>Seruwila</span><span>·</span><span>Trincomalee District</span>
+          </div>
+        </article>
+        <article class="hero-slide" data-index="1">
+          <div class="hero-photo" data-local-image="assets/main-slider/slide-02.jpg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Muthiyangana_raja_maha_viharaya.jpg?width=1800')"></div>
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <div class="tag">SACRED HERITAGE · SRI LANKA</div>
+            <div class="hero-kicker">02 / 04</div>
+            <h1>Walk through<br><em>living history.</em></h1>
+            <p>Discover places of worship, heritage architecture and stories preserved across generations.</p>
+            <div class="btnrow"><div class="btn btn-solid" id="heroExploreBtn2">Explore places →</div><div class="btn btn-ghost" id="heroViewAllBtn2">View all</div></div>
+          </div>
+          <div class="hero-meta"><span>Muthiyangana Raja Maha Viharaya</span><span>·</span><span>Badulla</span></div>
+        </article>
+        <article class="hero-slide" data-index="2">
+          <div class="hero-photo" data-local-image="assets/main-slider/slide-03.jpg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Dambulla_Rajamaha_Viharaya.-_Entr%C3%A9e_du_Temple_d%27or.jpg?width=1800')"></div>
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <div class="tag">ANCIENT PLACES · CULTURAL HERITAGE</div>
+            <div class="hero-kicker">03 / 04</div>
+            <h1>Stories carved<br><em>into stone.</em></h1>
+            <p>Experience the architecture, art and devotion behind Sri Lanka's most memorable sacred places.</p>
+            <div class="btnrow"><div class="btn btn-solid" id="heroExploreBtn3">Explore places →</div><div class="btn btn-ghost" id="heroViewAllBtn3">View all</div></div>
+          </div>
+          <div class="hero-meta"><span>Dambulla Rajamaha Viharaya</span><span>·</span><span>Matale District</span></div>
+        </article>
+        <article class="hero-slide" data-index="3">
+          <div class="hero-photo" data-local-image="assets/main-slider/slide-04.jpg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Buddhangala_Raja_Maha_Viharaya_1.jpg?width=1800')"></div>
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <div class="tag">SPIRITUAL JOURNEYS · SRI LANKA</div>
+            <div class="hero-kicker">04 / 04</div>
+            <h1>Find a moment<br><em>of stillness.</em></h1>
+            <p>Plan a meaningful visit with stories, locations and visual guides to sacred places.</p>
+            <div class="btnrow"><div class="btn btn-solid" id="heroExploreBtn4">Explore places →</div><div class="btn btn-ghost" id="heroViewAllBtn4">View all</div></div>
+          </div>
+          <div class="hero-meta"><span>Buddhangala Raja Maha Viharaya</span><span>·</span><span>Ampara District</span></div>
+        </article>
+      </div>
+      <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">‹</button>
+      <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">›</button>
+      <div class="hero-controls">
+        <div class="hero-dots" id="heroDots">
+          <button class="hero-dot active" data-slide="0" aria-label="Go to slide 1"><span></span></button>
+          <button class="hero-dot" data-slide="1" aria-label="Go to slide 2"><span></span></button>
+          <button class="hero-dot" data-slide="2" aria-label="Go to slide 3"><span></span></button>
+          <button class="hero-dot" data-slide="3" aria-label="Go to slide 4"><span></span></button>
+        </div>
+        <div class="hero-counter"><b id="heroCurrent">01</b><span>/ 04</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= EXPLORE BY RELIGION ================= -->
+  <section class="region-explore wrap" id="regionExplore" aria-labelledby="regionExploreTitle">
+    <div class="region-glass-card">
+    <div class="region-intro">
+      <div class="region-eyebrow"><span></span> EXPLORE BY RELIGION</div>
+      <h2 id="regionExploreTitle">Different Paths<br><strong>One Humanity</strong></h2>
+      <p>Discover sacred places from different religions and experience the shared heritage of Sri Lanka.</p>
+      <button class="region-main-cta" type="button" id="regionExploreBtn">
+        <span class="region-cta-icon" aria-hidden="true">→</span>
+        <span>Explore by Religion</span>
+      </button>
+    </div>
+    <div class="region-cards" aria-label="Explore sacred places by religion">
+      <button class="region-card region-buddhism" type="button" data-region="buddhism" aria-label="Explore Buddhist sacred places">
+        <span class="region-photo" aria-hidden="true"></span><span class="region-shade" aria-hidden="true"></span>
+        <span class="region-symbol" aria-hidden="true">☸</span>
+        <span class="region-card-title">Buddhism</span><span class="region-card-sub">Explore sacred places</span>
+        <span class="region-card-arrow" aria-hidden="true">→</span>
+      </button>
+      <button class="region-card region-christianity" type="button" data-region="christianity" aria-label="Explore Christian sacred places">
+        <span class="region-photo" aria-hidden="true"></span><span class="region-shade" aria-hidden="true"></span>
+        <span class="region-symbol region-cross" aria-hidden="true">✝</span>
+        <span class="region-card-title">Christianity</span><span class="region-card-sub">Explore sacred places</span>
+        <span class="region-card-arrow" aria-hidden="true">→</span>
+      </button>
+      <button class="region-card region-islam" type="button" data-region="islam" aria-label="Explore Islamic sacred places">
+        <span class="region-photo" aria-hidden="true"></span><span class="region-shade" aria-hidden="true"></span>
+        <span class="region-symbol region-crescent" aria-hidden="true">☾</span>
+        <span class="region-card-title">Islam</span><span class="region-card-sub">Explore sacred places</span>
+        <span class="region-card-arrow" aria-hidden="true">→</span>
+      </button>
+      <button class="region-card region-hinduism" type="button" data-region="hinduism" aria-label="Explore Hindu sacred places">
+        <span class="region-photo" aria-hidden="true"></span><span class="region-shade" aria-hidden="true"></span>
+        <span class="region-symbol" aria-hidden="true">ॐ</span>
+        <span class="region-card-title">Hinduism</span><span class="region-card-sub">Explore sacred places</span>
+        <span class="region-card-arrow" aria-hidden="true">→</span>
+      </button>
+    </div>
+    </div>
+  </section>
+
+  <section class="section wrap sacred-section">
+    <div class="sacred-glass-card">
+    <div class="sec-top sacred-head">
+      <div>
+        <div class="eyebrow">EXPLORE SRI LANKA</div>
+        <h2>Sacred places</h2>
+        <p>Discover temples, mosques, churches and shrines across Sri Lanka.</p>
+      </div>
+      <button class="btn btn-ghost" id="bentoViewAllBtn" type="button">View all <span>→</span></button>
+    </div>
+
+    <div class="home-filters" id="homeFilters" aria-label="Filter sacred places">
+      <button class="pill active" type="button" data-home-filter="all">All places</button>
+      <button class="pill" type="button" data-home-filter="buddhism">Buddhism</button>
+      <button class="pill" type="button" data-home-filter="hinduism">Hinduism</button>
+      <button class="pill" type="button" data-home-filter="islam">Islam</button>
+      <button class="pill" type="button" data-home-filter="christianity">Christianity</button>
+    </div>
+
+    <div class="places-carousel" id="placesCarousel">
+      <button class="carousel-arrow carousel-prev" id="placesPrev" type="button" aria-label="Previous sacred places">‹</button>
+      <div class="places-viewport">
+        <div class="places-track" id="placesTrack"></div>
+      </div>
+      <button class="carousel-arrow carousel-next" id="placesNext" type="button" aria-label="Next sacred places">›</button>
+      <div class="places-progress" id="placesProgress" aria-hidden="true"></div>
+    </div>
+    </div>
+  </section>
+  </div>
+</div>
+
+<!-- ================= LISTING ================= -->
+<div id="page-listing" class="hidden">
+  <section class="banner wrap">
+    <h1>Religious places</h1>
+    <p>Temples, Mosques, Churches &amp; Shrines across Sri Lanka</p>
+  </section>
+  <section class="section wrap" style="padding-top:20px">
+    <div class="searchrow">
+      <input placeholder="Search by name or location…" id="searchInput">
+      <div class="btn btn-solid" id="searchBtn">Search</div>
+    </div>
+    <div class="pillrow" style="margin-bottom:40px" id="filterPills">
+      <div class="pill active" data-filter="all">All</div><div class="pill" data-filter="buddhism">Buddhism</div><div class="pill" data-filter="hinduism">Hinduism</div>
+      <div class="pill" data-filter="islam">Islam</div><div class="pill" data-filter="christianity">Christianity</div>
+    </div>
+    <div class="grid3" id="listGrid"></div>
+  </section>
+</div>
+
+<!-- ================= DETAIL ================= -->
+<div id="page-detail" class="hidden">
+  <section class="detail-hero">
+    <div class="dh-bg"></div>
+  </section>
+  <div class="detail-main-card">
+  <div class="wrap detail-content-wrap">
+    <div class="glass floatpanel">
+      <div><div class="breadcrumb" id="detailBreadcrumb">BUDDHISM · SAGAMA · SRI LANKA</div><h1 id="detailTitle">Sagama Rajamaha Viharaya</h1><div class="sinh" id="detailSinh">සගම රජමහා විහාරය</div></div>
+      <div class="btnrow"><button class="btn btn-ghost detail-back" id="detailBackBtn" type="button"><span aria-hidden="true">←</span> <span id="detailBackLabel">Back</span></button><div class="btn btn-ghost" id="saveBtn">♡ Save</div><div class="btn btn-solid" id="directionsBtn">Directions →</div></div>
+    </div>
+  </div>
+
+  <section class="wrap detail-body">
+    <div class="prose glass detail-prose-card">
+      <div id="detailParas">
+      <p>Sagama Rajamaha Viharaya is located in Bootawatta village in the Pathahewaheta Divisional Secretariat Division of Kandy District. To reach the temple, travel from Kandy towards Thalathuoya and then proceed approximately 14 km along the Bawlana Road. This is also the first location mentioned in the Buddhist historical text known as the "Nam Potha." Historical records state that the construction of Sagama Rajamaha Viharaya began during the reign of King Devanampiya Tissa and was further developed during the Gampola Kingdom period.</p>
+      <p>The temple also features an image house adorned with Kandyan-era paintings and sculptures, as well as a stone enclosure built around the ancient Bodhi tree. The image house, bell-shaped stupa, Uposatha house, and old residential quarters are among the archaeologically significant structures found at the temple.</p>
+      <p>According to legend, during the Anuradhapura period, a sapling of the sacred Jaya Sri Maha Bodhi was taken to Ruhuna. It is believed that the sapling took root at the place where it was temporarily kept. An inscription on a rock near Sagama Temple records that, during the reign of King Bhuvanekabahu V, two ministerial brothers, Alakeshvara and Deva Mantri, donated forty amunas of paddy land in Hapuhale village to Senkadagala Natha Deity and Rukwasi Deity. The Aluth Sahal Mangallaya (New Rice Festival) is also held at the Sagama Rajamaha Viharaya, using rice collected from the six villages of Godamunna, Bootawatta, Nugaliyadda, Kapuliyadda, Hapuhale, and Mahamadagama.</p>
+      </div>
+      <div class="divider"></div>
+    </div>
+    <aside>
+      <div class="glass side-card">
+        <h4>Visitor info</h4>
+        <div class="info-row"><span>District</span><span id="detailDistrict">Kandy</span></div>
+        <div class="info-row"><span>Founded</span><span id="detailFounded">Anuradhapura era</span></div>
+        <div class="info-row"><span>Religion</span><span id="detailReligion">Buddhism</span></div>
+        <div class="info-row"><span>Nearest town</span><span id="detailTown">Thalathuoya</span></div>
+      </div>
+      <div class="glass side-card">
+        <h4>Share</h4>
+        <div class="btnrow" style="flex-wrap:wrap"><div class="btn btn-ghost" style="padding:10px 16px;font-size:11px" id="fbShareBtn">Facebook</div><div class="btn btn-ghost" style="padding:10px 16px;font-size:11px" id="copyLinkBtn">Copy link</div></div>
+      </div>
+    </aside>
+    <div class="detail-gallery-full glass detail-gallery-card">
+      <div class="gallery-heading"><div class="gallery-title">GALLERY</div><button class="gallery-view-all" id="galleryViewAll" type="button">View all <span aria-hidden="true">↗</span></button></div>
+      <div class="gallery-carousel" id="detailGallery" aria-label="Place image gallery">
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous image">‹</button>
+        <div class="gallery-window">
+          <div class="gallery-track">
+            <div class="g g1" role="img" aria-label="Temple gallery image 1"></div>
+            <div class="g g2" role="img" aria-label="Temple gallery image 2"></div>
+            <div class="g g3" role="img" aria-label="Temple gallery image 3"></div>
+            <div class="g g4" role="img" aria-label="Temple gallery image 4"></div>
+            <div class="g g5" role="img" aria-label="Temple gallery image 5"></div>
+          </div>
+        </div>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Next image">›</button>
+        <div class="gallery-dots" aria-label="Choose gallery image"></div>
+      </div>
+
+    </div>
+  </section>
+  </div><!-- /detail-main-card -->
+</div>
+
+<div id="page-gallery" class="hidden gallery-page">
+  <header class="gallery-page-header">
+    <div class="wrap">
+      <button class="gallery-page-back" id="galleryPageBack" type="button">← Back to place</button>
+      <div class="gallery-page-eyebrow">SIRASA RELIGIOUS · PHOTO COLLECTION</div>
+      <h1 id="galleryPageTitle">Place Gallery</h1>
+      <p id="galleryPageSubtitle">Explore images of this sacred place.</p>
+    </div>
+  </header>
+  <main class="wrap gallery-page-main">
+    <div class="gallery-page-toolbar"><span id="galleryImageCount"></span><span>PHOTO GALLERY</span></div>
+    <div class="gallery-masonry" id="galleryAllImages"></div>
+  </main>
+</div>
+
+
+
+<!-- Full-screen photo collection viewer -->
+<div class="photo-lightbox" id="photoLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="photo-lightbox-close" id="photoLightboxClose" type="button" aria-label="Close photo viewer">×</button>
+  <button class="photo-lightbox-arrow photo-lightbox-prev" id="photoLightboxPrev" type="button" aria-label="Previous photo">‹</button>
+  <figure class="photo-lightbox-figure">
+    <img id="photoLightboxImage" alt="">
+    <figcaption id="photoLightboxCaption"></figcaption>
+  </figure>
+  <button class="photo-lightbox-arrow photo-lightbox-next" id="photoLightboxNext" type="button" aria-label="Next photo">›</button>
+  <div class="photo-lightbox-count" id="photoLightboxCount"></div>
+</div>
+
+<footer id="siteFooter"><div class="brand"><img class="brand-mark" src="assets/logo.png" alt="" aria-hidden="true">SIRASA <span style="color:var(--red)">RELIGIOUS</span></div>Sri Lanka · © 2026 all rights reserved</footer>
+
+<script src="js/hero-carousel/en.js"></script>
+<script src="js/hero-carousel/si.js"></script>
+<script src="js/hero-carousel/ta.js"></script>
+<script src="js/content/si.js"></script>
+<script src="js/content/en.js"></script>
+<script src="js/content/ta.js"></script>
+<script src="js/article-details/en.js"></script>
+<script src="js/article-details/si.js"></script>
+<script src="js/article-details/ta.js"></script>
+<script src="js/script.js?v=manual-article-content-1"></script>
+</body>
+</html>
