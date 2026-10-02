@@ -1,0 +1,30 @@
+SIRASA RELIGIOUS — LANGUAGE CONTENT FILES
+
+Edit one file per language:
+- js/content/si.js = Sinhala copy only
+- js/content/en.js = English copy only (kept as English; no automatic translation)
+- js/content/ta.js = Tamil copy only
+
+Homepage main carousel text is separated inside each file at carousel.slides.
+Each slide has: tag, titleLine1, titleLine2, description, place, region.
+The section below the hero is under carousel.sectionEyebrow, sectionTitle, and sectionDescription.
+General interface labels are under ui.
+
+Keep the object/property names and quote marks intact when changing text. Save files as UTF-8.
+The website loads these local JS files, so it can still be opened directly via index.html.
+
+
+LANGUAGE BEHAVIOUR
+- The website always opens in English on initial page load. A language selected during the visit applies immediately, but the next fresh load starts in English again.
+- Religious-place article titles, summaries, metadata and available full descriptions switch to Sinhala or Tamil when the visitor selects that language. These article translations are maintained in js/script.js in the placeTranslations object (si and ta entries, keyed by article index).
+- The interface labels and homepage hero copy remain independently editable in js/content/en.js, si.js and ta.js. They are not automatically translated.
+- This is a static front-end site: article language switching uses the translations included with the site. Live machine translation of newly added articles would require a translation service and a secure server-side API; do not put a private API key in browser JavaScript.
+
+PLACE DETAIL LINKS
+- Clicking a place card in the homepage carousel opens that place's detail view.
+- Each detail view now has a shareable URL hash (#place/1-...) and can be refreshed or opened directly.
+- Browser Back/Forward restores the previous page/place.
+
+TRANSLATION SCOPE
+- The current static build includes the supplied Sinhala/Tamil place translations only.
+- It does not perform live machine translation of newly edited content. To auto-translate future place content, connect a server-side translation API and invoke it only for the five records in the places array. Keep general UI strings in the separate en.js, si.js and ta.js files; do not send them to that API.
